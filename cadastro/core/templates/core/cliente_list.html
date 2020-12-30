@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ClienteList</title>
+</head>
+<body>
+    {% for cliente in object_list %}
+        <p>{{ cliente.user}} </p>
+        <p> {{ cliente.cpf}} </p>
+        <p> {{cliente.rg}}</p>
+        <p> {{cliente.email}}</p>
+        <p>{{ cliente.telefone}}</p>
+        <p> {{cliente.id}}</p>
+        <br>
+    {% endfor %}
+</body>
+</html>
